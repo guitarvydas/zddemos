@@ -1,13 +1,82 @@
 [
   {
-    "name": "main",
+    "name": "indeterminate",
     "children": [
       {
-        "name": "Hello",
+        "name": "World",
         "id": 5
       },
       {
+        "name": "Hello",
+        "id": 9
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        }
+      }
+    ]
+  },
+  {
+    "name": "seq1",
+    "children": [
+      {
         "name": "World",
+        "id": 5
+      },
+      {
+        "name": "Hello",
         "id": 9
       }
     ],
@@ -18,15 +87,92 @@
         "target_port": "",
         "target": {
           "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        },
+        "target": {
+          "name": "World",
           "id": 5
         }
       },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        }
+      }
+    ]
+  },
+  {
+    "name": "seq2",
+    "children": [
+      {
+        "name": "World",
+        "id": 5
+      },
+      {
+        "name": "Hello",
+        "id": 9
+      }
+    ],
+    "connections": [
       {
         "dir": 0,
         "source_port": "",
         "target_port": "",
         "target": {
           "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "World",
+          "id": 5
+        },
+        "target": {
+          "name": "Hello",
           "id": 9
         }
       },
@@ -35,7 +181,7 @@
         "source_port": "",
         "target_port": "",
         "source": {
-          "name": "Hello",
+          "name": "World",
           "id": 5
         }
       },
@@ -44,7 +190,7 @@
         "source_port": "",
         "target_port": "",
         "source": {
-          "name": "World",
+          "name": "Hello",
           "id": 9
         }
       },
@@ -53,7 +199,7 @@
         "source_port": "✗",
         "target_port": "✗",
         "source": {
-          "name": "Hello",
+          "name": "World",
           "id": 5
         }
       },
@@ -62,7 +208,7 @@
         "source_port": "✗",
         "target_port": "✗",
         "source": {
-          "name": "World",
+          "name": "Hello",
           "id": 9
         }
       }
