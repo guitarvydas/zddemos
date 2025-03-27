@@ -2,9 +2,9 @@ import sys
 sys.path.insert(0, '../zd')
 import kernel0d as zd
 
-from once import Once_install
+from fivetimes import FiveTimes_install
 
 [palette, env] = zd.initialize ()
-Once_install (palette)
+FiveTimes_install (palette)
 zd.start (palette, env)
 
