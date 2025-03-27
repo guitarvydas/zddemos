@@ -1,4 +1,4 @@
-Arithmetic {
+% rewrite Arithmetic {
   Exp [AddExp] = ‛«AddExp»’
 
   AddExp_plus  [AddExp kplus MulExp] = ‛(+ «AddExp» «MulExp»)’

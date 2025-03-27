@@ -1,6 +1,6 @@
 [
   {
-    "name": "indeterminate",
+    "name": "nondeterministic",
     "children": [
       {
         "name": "World",
@@ -210,6 +210,594 @@
         "source": {
           "name": "Hello",
           "id": 9
+        }
+      }
+    ]
+  },
+  {
+    "name": "seq3",
+    "children": [
+      {
+        "name": "World",
+        "id": 5
+      },
+      {
+        "name": "Hello",
+        "id": 9
+      },
+      {
+        "name": "Cruel",
+        "id": 13
+      },
+      {
+        "name": "1then2",
+        "id": 17
+      },
+      {
+        "name": "1then2",
+        "id": 22
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "2",
+        "target": {
+          "name": "1then2",
+          "id": 17
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "1",
+        "target": {
+          "name": "1then2",
+          "id": 22
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "2",
+        "target": {
+          "name": "1then2",
+          "id": 22
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "2",
+        "target_port": "1",
+        "source": {
+          "name": "1then2",
+          "id": 22
+        },
+        "target": {
+          "name": "1then2",
+          "id": 17
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "1",
+        "target_port": "",
+        "source": {
+          "name": "1then2",
+          "id": 22
+        },
+        "target": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "1",
+        "target_port": "",
+        "source": {
+          "name": "1then2",
+          "id": 17
+        },
+        "target": {
+          "name": "Cruel",
+          "id": 13
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "2",
+        "target_port": "",
+        "source": {
+          "name": "1then2",
+          "id": 17
+        },
+        "target": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Cruel",
+          "id": 13
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Cruel",
+          "id": 13
+        }
+      }
+    ]
+  },
+  {
+    "name": "seq3a",
+    "children": [
+      {
+        "name": "World",
+        "id": 5
+      },
+      {
+        "name": "Hello",
+        "id": 9
+      },
+      {
+        "name": "Cruel",
+        "id": 13
+      },
+      {
+        "name": "1then2",
+        "id": 17
+      },
+      {
+        "name": "1then2",
+        "id": 22
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "2",
+        "target": {
+          "name": "1then2",
+          "id": 17
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "1",
+        "target": {
+          "name": "1then2",
+          "id": 22
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "2",
+        "target": {
+          "name": "1then2",
+          "id": 22
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "2",
+        "target_port": "1",
+        "source": {
+          "name": "1then2",
+          "id": 22
+        },
+        "target": {
+          "name": "1then2",
+          "id": 17
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "1",
+        "target_port": "",
+        "source": {
+          "name": "1then2",
+          "id": 22
+        },
+        "target": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "1",
+        "target_port": "",
+        "source": {
+          "name": "1then2",
+          "id": 17
+        },
+        "target": {
+          "name": "Cruel",
+          "id": 13
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "2",
+        "target_port": "",
+        "source": {
+          "name": "1then2",
+          "id": 17
+        },
+        "target": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Cruel",
+          "id": 13
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Cruel",
+          "id": 13
+        }
+      }
+    ]
+  },
+  {
+    "name": "seq4",
+    "children": [
+      {
+        "name": "World",
+        "id": 5
+      },
+      {
+        "name": "Hello",
+        "id": 9
+      },
+      {
+        "name": "Cruel",
+        "id": 13
+      },
+      {
+        "name": "1then2",
+        "id": 17
+      },
+      {
+        "name": "1then2",
+        "id": 22
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "Cruel",
+          "id": 13
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "2",
+        "source": {
+          "name": "Cruel",
+          "id": 13
+        },
+        "target": {
+          "name": "1then2",
+          "id": 22
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "1",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        },
+        "target": {
+          "name": "1then2",
+          "id": 22
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "2",
+        "target_port": "1",
+        "source": {
+          "name": "1then2",
+          "id": 22
+        },
+        "target": {
+          "name": "1then2",
+          "id": 17
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "2",
+        "source": {
+          "name": "World",
+          "id": 5
+        },
+        "target": {
+          "name": "1then2",
+          "id": 17
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Cruel",
+          "id": 13
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "1",
+        "target_port": "",
+        "source": {
+          "name": "1then2",
+          "id": 22
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "1",
+        "target_port": "",
+        "source": {
+          "name": "1then2",
+          "id": 17
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "2",
+        "target_port": "",
+        "source": {
+          "name": "1then2",
+          "id": 17
+        }
+      }
+    ]
+  },
+  {
+    "name": "seq4a",
+    "children": [
+      {
+        "name": "World",
+        "id": 5
+      },
+      {
+        "name": "Hello",
+        "id": 9
+      },
+      {
+        "name": "Cruel",
+        "id": 13
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        },
+        "target": {
+          "name": "Cruel",
+          "id": 13
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Cruel",
+          "id": 13
+        },
+        "target": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "World",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Cruel",
+          "id": 13
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Hello",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Cruel",
+          "id": 13
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "World",
+          "id": 5
         }
       }
     ]
