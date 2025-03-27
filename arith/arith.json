@@ -1,6 +1,6 @@
 [
   {
-    "name": "main",
+    "name": "debug main",
     "children": [
       {
         "name": "To Common Lisp",
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "name": "Copy of main",
+    "name": "main",
     "children": [
       {
         "name": "To Common Lisp",
@@ -274,121 +274,17 @@
     "name": "To Javascript",
     "children": [
       {
-        "name": "Transpile",
+        "name": "$ ./t2t arith.ohm arithjs.rwr null.js -",
         "id": 5
-      },
-      {
-        "name": "'Arithmetic'",
-        "id": 13
-      },
-      {
-        "name": "'null.js'",
-        "id": 16
-      },
-      {
-        "name": "'arith.ohm'",
-        "id": 19
-      },
-      {
-        "name": "'arithjs.rwr'",
-        "id": 22
       }
     ],
     "connections": [
       {
         "dir": 0,
         "source_port": "",
-        "target_port": "input",
+        "target_port": "",
         "target": {
-          "name": "Transpile",
-          "id": 5
-        }
-      },
-      {
-        "dir": 0,
-        "source_port": "",
-        "target_port": "⍺",
-        "target": {
-          "name": "'arithjs.rwr'",
-          "id": 22
-        }
-      },
-      {
-        "dir": 0,
-        "source_port": "",
-        "target_port": "⍺",
-        "target": {
-          "name": "'arith.ohm'",
-          "id": 19
-        }
-      },
-      {
-        "dir": 0,
-        "source_port": "",
-        "target_port": "⍺",
-        "target": {
-          "name": "'Arithmetic'",
-          "id": 13
-        }
-      },
-      {
-        "dir": 0,
-        "source_port": "",
-        "target_port": "⍺",
-        "target": {
-          "name": "'null.js'",
-          "id": 16
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "⍺",
-        "target_port": "rwrsupportfn",
-        "source": {
-          "name": "'null.js'",
-          "id": 16
-        },
-        "target": {
-          "name": "Transpile",
-          "id": 5
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "⍺",
-        "target_port": "ohmfn",
-        "source": {
-          "name": "'arith.ohm'",
-          "id": 19
-        },
-        "target": {
-          "name": "Transpile",
-          "id": 5
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "⍺",
-        "target_port": "rwrfn",
-        "source": {
-          "name": "'arithjs.rwr'",
-          "id": 22
-        },
-        "target": {
-          "name": "Transpile",
-          "id": 5
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "⍺",
-        "target_port": "grammar name",
-        "source": {
-          "name": "'Arithmetic'",
-          "id": 13
-        },
-        "target": {
-          "name": "Transpile",
+          "name": "$ ./t2t arith.ohm arithjs.rwr null.js -",
           "id": 5
         }
       },
@@ -397,7 +293,7 @@
         "source_port": "",
         "target_port": "",
         "source": {
-          "name": "Transpile",
+          "name": "$ ./t2t arith.ohm arithjs.rwr null.js -",
           "id": 5
         }
       },
@@ -406,7 +302,7 @@
         "source_port": "✗",
         "target_port": "✗",
         "source": {
-          "name": "Transpile",
+          "name": "$ ./t2t arith.ohm arithjs.rwr null.js -",
           "id": 5
         }
       }
@@ -416,121 +312,17 @@
     "name": "To Python",
     "children": [
       {
-        "name": "Transpile",
+        "name": "$ ./t2t arith.ohm arithpy.rwr null.js -",
         "id": 5
-      },
-      {
-        "name": "'Arithmetic'",
-        "id": 13
-      },
-      {
-        "name": "'null.js'",
-        "id": 16
-      },
-      {
-        "name": "'arith.ohm'",
-        "id": 19
-      },
-      {
-        "name": "'arithpy.rwr'",
-        "id": 22
       }
     ],
     "connections": [
       {
         "dir": 0,
         "source_port": "",
-        "target_port": "input",
+        "target_port": "",
         "target": {
-          "name": "Transpile",
-          "id": 5
-        }
-      },
-      {
-        "dir": 0,
-        "source_port": "",
-        "target_port": "⍺",
-        "target": {
-          "name": "'arithpy.rwr'",
-          "id": 22
-        }
-      },
-      {
-        "dir": 0,
-        "source_port": "",
-        "target_port": "⍺",
-        "target": {
-          "name": "'arith.ohm'",
-          "id": 19
-        }
-      },
-      {
-        "dir": 0,
-        "source_port": "",
-        "target_port": "⍺",
-        "target": {
-          "name": "'Arithmetic'",
-          "id": 13
-        }
-      },
-      {
-        "dir": 0,
-        "source_port": "",
-        "target_port": "⍺",
-        "target": {
-          "name": "'null.js'",
-          "id": 16
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "⍺",
-        "target_port": "rwrsupportfn",
-        "source": {
-          "name": "'null.js'",
-          "id": 16
-        },
-        "target": {
-          "name": "Transpile",
-          "id": 5
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "⍺",
-        "target_port": "ohmfn",
-        "source": {
-          "name": "'arith.ohm'",
-          "id": 19
-        },
-        "target": {
-          "name": "Transpile",
-          "id": 5
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "⍺",
-        "target_port": "rwrfn",
-        "source": {
-          "name": "'arithpy.rwr'",
-          "id": 22
-        },
-        "target": {
-          "name": "Transpile",
-          "id": 5
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "⍺",
-        "target_port": "grammar name",
-        "source": {
-          "name": "'Arithmetic'",
-          "id": 13
-        },
-        "target": {
-          "name": "Transpile",
+          "name": "$ ./t2t arith.ohm arithpy.rwr null.js -",
           "id": 5
         }
       },
@@ -539,7 +331,7 @@
         "source_port": "",
         "target_port": "",
         "source": {
-          "name": "Transpile",
+          "name": "$ ./t2t arith.ohm arithpy.rwr null.js -",
           "id": 5
         }
       },
@@ -548,7 +340,7 @@
         "source_port": "✗",
         "target_port": "✗",
         "source": {
-          "name": "Transpile",
+          "name": "$ ./t2t arith.ohm arithpy.rwr null.js -",
           "id": 5
         }
       }
@@ -558,121 +350,17 @@
     "name": "To Wasm",
     "children": [
       {
-        "name": "Transpile",
+        "name": "$ ./t2t arith.ohm arithwasm.rwr null.js -",
         "id": 5
-      },
-      {
-        "name": "'Arithmetic'",
-        "id": 13
-      },
-      {
-        "name": "'null.js'",
-        "id": 16
-      },
-      {
-        "name": "'arith.ohm'",
-        "id": 19
-      },
-      {
-        "name": "'arithwasm.rwr'",
-        "id": 22
       }
     ],
     "connections": [
       {
         "dir": 0,
         "source_port": "",
-        "target_port": "input",
+        "target_port": "",
         "target": {
-          "name": "Transpile",
-          "id": 5
-        }
-      },
-      {
-        "dir": 0,
-        "source_port": "",
-        "target_port": "⍺",
-        "target": {
-          "name": "'arithwasm.rwr'",
-          "id": 22
-        }
-      },
-      {
-        "dir": 0,
-        "source_port": "",
-        "target_port": "⍺",
-        "target": {
-          "name": "'arith.ohm'",
-          "id": 19
-        }
-      },
-      {
-        "dir": 0,
-        "source_port": "",
-        "target_port": "⍺",
-        "target": {
-          "name": "'Arithmetic'",
-          "id": 13
-        }
-      },
-      {
-        "dir": 0,
-        "source_port": "",
-        "target_port": "⍺",
-        "target": {
-          "name": "'null.js'",
-          "id": 16
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "⍺",
-        "target_port": "rwrsupportfn",
-        "source": {
-          "name": "'null.js'",
-          "id": 16
-        },
-        "target": {
-          "name": "Transpile",
-          "id": 5
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "⍺",
-        "target_port": "ohmfn",
-        "source": {
-          "name": "'arith.ohm'",
-          "id": 19
-        },
-        "target": {
-          "name": "Transpile",
-          "id": 5
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "⍺",
-        "target_port": "rwrfn",
-        "source": {
-          "name": "'arithwasm.rwr'",
-          "id": 22
-        },
-        "target": {
-          "name": "Transpile",
-          "id": 5
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "⍺",
-        "target_port": "grammar name",
-        "source": {
-          "name": "'Arithmetic'",
-          "id": 13
-        },
-        "target": {
-          "name": "Transpile",
+          "name": "$ ./t2t arith.ohm arithwasm.rwr null.js -",
           "id": 5
         }
       },
@@ -681,7 +369,7 @@
         "source_port": "",
         "target_port": "",
         "source": {
-          "name": "Transpile",
+          "name": "$ ./t2t arith.ohm arithwasm.rwr null.js -",
           "id": 5
         }
       },
@@ -690,7 +378,7 @@
         "source_port": "✗",
         "target_port": "✗",
         "source": {
-          "name": "Transpile",
+          "name": "$ ./t2t arith.ohm arithwasm.rwr null.js -",
           "id": 5
         }
       }

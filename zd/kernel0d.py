@@ -946,8 +946,8 @@ def initialize ():                                     #line 686
     return [ palette,[ root_of_project, root_of_0D, main_container_name, diagram_names, arg]]#line 693#line 694#line 695
 
 def start (palette,env):                               #line 696
-    live_update ( "",  "reset")                        #line 697
-    live_update ( "Info",  "begin...")                 #line 698
+    # live_update ( "",  "reset")                        #line 697
+    # live_update ( "Info",  "begin...")                 #line 698
     root_of_project =  env [ 0]                        #line 699
     root_of_0D =  env [ 1]                             #line 700
     main_container_name =  env [ 2]                    #line 701
@@ -963,7 +963,7 @@ def start (palette,env):                               #line 696
         mev = make_mevent ( "", marg)                  #line 715
         inject ( main_container, mev)                  #line 716
         print (deque_to_json ( main_container.outq))   #line 717#line 718
-    live_update ( "Info",  "...end")                   #line 719#line 720#line 721
+    # live_update ( "Info",  "...end")                   #line 719#line 720#line 721
                                                        #line 722
 # utility functions                                    #line 723
 def send_int (eh,port,i,causing_mevent):               #line 724
