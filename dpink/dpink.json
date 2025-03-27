@@ -1,0 +1,79 @@
+[
+  {
+    "name": "main",
+    "children": [
+      {
+        "name": "$ ./agency/main -model gpt-3.5-turbo -maxTokens 1000 -temp=1 -prompt \"\" \"Why is concurrency so difficult?\"",
+        "id": 5
+      },
+      {
+        "name": "Once",
+        "id": 9
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "$ ./agency/main -model gpt-3.5-turbo -maxTokens 1000 -temp=1 -prompt \"\" \"Why is concurrency so difficult?\"",
+          "id": 5
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Once",
+          "id": 9
+        },
+        "target": {
+          "name": "$ ./agency/main -model gpt-3.5-turbo -maxTokens 1000 -temp=1 -prompt \"\" \"Why is concurrency so difficult?\"",
+          "id": 5
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "$ ./agency/main -model gpt-3.5-turbo -maxTokens 1000 -temp=1 -prompt \"\" \"Why is concurrency so difficult?\"",
+          "id": 5
+        },
+        "target": {
+          "name": "Once",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "$ ./agency/main -model gpt-3.5-turbo -maxTokens 1000 -temp=1 -prompt \"\" \"Why is concurrency so difficult?\"",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "$ ./agency/main -model gpt-3.5-turbo -maxTokens 1000 -temp=1 -prompt \"\" \"Why is concurrency so difficult?\"",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Once",
+          "id": 9
+        }
+      }
+    ]
+  }
+]
