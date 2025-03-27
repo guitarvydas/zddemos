@@ -1,0 +1,387 @@
+[
+  {
+    "name": "debug main",
+    "children": [
+      {
+        "name": "To Common Lisp",
+        "id": 5
+      },
+      {
+        "name": "Read Text File",
+        "id": 9
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "Read Text File",
+          "id": 9
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Read Text File",
+          "id": 9
+        },
+        "target": {
+          "name": "To Common Lisp",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "CL",
+        "source": {
+          "name": "To Common Lisp",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "To Common Lisp",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Read Text File",
+          "id": 9
+        }
+      }
+    ]
+  },
+  {
+    "name": "main",
+    "children": [
+      {
+        "name": "To Common Lisp",
+        "id": 8
+      },
+      {
+        "name": "Read Text File",
+        "id": 12
+      },
+      {
+        "name": "To Javascript",
+        "id": 16
+      },
+      {
+        "name": "To Python",
+        "id": 20
+      },
+      {
+        "name": "To Wasm",
+        "id": 24
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "Read Text File",
+          "id": 12
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Read Text File",
+          "id": 12
+        },
+        "target": {
+          "name": "To Common Lisp",
+          "id": 8
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Read Text File",
+          "id": 12
+        },
+        "target": {
+          "name": "To Javascript",
+          "id": 16
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Read Text File",
+          "id": 12
+        },
+        "target": {
+          "name": "To Python",
+          "id": 20
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Read Text File",
+          "id": 12
+        },
+        "target": {
+          "name": "To Wasm",
+          "id": 24
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "CL",
+        "source": {
+          "name": "To Common Lisp",
+          "id": 8
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "To Common Lisp",
+          "id": 8
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Read Text File",
+          "id": 12
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "To Javascript",
+          "id": 16
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "JS",
+        "source": {
+          "name": "To Javascript",
+          "id": 16
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "Python",
+        "source": {
+          "name": "To Python",
+          "id": 20
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "To Python",
+          "id": 20
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "Wasm",
+        "source": {
+          "name": "To Wasm",
+          "id": 24
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "To Wasm",
+          "id": 24
+        }
+      }
+    ]
+  },
+  {
+    "name": "To Common Lisp",
+    "children": [
+      {
+        "name": "$ ./t2t arith.ohm arithcl.rwr null.js -",
+        "id": 5
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "$ ./t2t arith.ohm arithcl.rwr null.js -",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "$ ./t2t arith.ohm arithcl.rwr null.js -",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "$ ./t2t arith.ohm arithcl.rwr null.js -",
+          "id": 5
+        }
+      }
+    ]
+  },
+  {
+    "name": "To Javascript",
+    "children": [
+      {
+        "name": "$ ./t2t arith.ohm arithjs.rwr null.js -",
+        "id": 5
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "$ ./t2t arith.ohm arithjs.rwr null.js -",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "$ ./t2t arith.ohm arithjs.rwr null.js -",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "$ ./t2t arith.ohm arithjs.rwr null.js -",
+          "id": 5
+        }
+      }
+    ]
+  },
+  {
+    "name": "To Python",
+    "children": [
+      {
+        "name": "$ ./t2t arith.ohm arithpy.rwr null.js -",
+        "id": 5
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "$ ./t2t arith.ohm arithpy.rwr null.js -",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "$ ./t2t arith.ohm arithpy.rwr null.js -",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "$ ./t2t arith.ohm arithpy.rwr null.js -",
+          "id": 5
+        }
+      }
+    ]
+  },
+  {
+    "name": "To Wasm",
+    "children": [
+      {
+        "name": "$ ./t2t arith.ohm arithwasm.rwr null.js -",
+        "id": 5
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "$ ./t2t arith.ohm arithwasm.rwr null.js -",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "$ ./t2t arith.ohm arithwasm.rwr null.js -",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "$ ./t2t arith.ohm arithwasm.rwr null.js -",
+          "id": 5
+        }
+      }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-Arithmetic {
+% rewrite Arithmetic {
   Exp [AddExp] = ‛«AddExp»’
 
   AddExp_plus  [AddExp kplus MulExp] = ‛(f64.add «AddExp» «MulExp»)’
