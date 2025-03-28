@@ -3,8 +3,20 @@
     "name": "main",
     "children": [
       {
-        "name": "$ ./agency/main -model gpt-3.5-turbo -maxTokens 1000 -temp=1 -prompt \"\" \"Why is concurrency so difficult?\"",
+        "name": "$ ./llm.bash",
         "id": 5
+      },
+      {
+        "name": "Five Times",
+        "id": 9
+      },
+      {
+        "name": "$ ./llmwhy.bash",
+        "id": 13
+      },
+      {
+        "name": "?A",
+        "id": 17
       }
     ],
     "connections": [
@@ -13,8 +25,60 @@
         "source_port": "",
         "target_port": "",
         "target": {
-          "name": "$ ./agency/main -model gpt-3.5-turbo -maxTokens 1000 -temp=1 -prompt \"\" \"Why is concurrency so difficult?\"",
+          "name": "$ ./llm.bash",
           "id": 5
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Five Times",
+          "id": 9
+        },
+        "target": {
+          "name": "$ ./llmwhy.bash",
+          "id": 13
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "$ ./llm.bash",
+          "id": 5
+        },
+        "target": {
+          "name": "Five Times",
+          "id": 9
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "$ ./llmwhy.bash",
+          "id": 13
+        },
+        "target": {
+          "name": "$ ./llm.bash",
+          "id": 5
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "Five Times",
+          "id": 9
+        },
+        "target": {
+          "name": "?A",
+          "id": 17
         }
       },
       {
@@ -22,7 +86,7 @@
         "source_port": "",
         "target_port": "",
         "source": {
-          "name": "$ ./agency/main -model gpt-3.5-turbo -maxTokens 1000 -temp=1 -prompt \"\" \"Why is concurrency so difficult?\"",
+          "name": "$ ./llm.bash",
           "id": 5
         }
       },
@@ -31,8 +95,35 @@
         "source_port": "✗",
         "target_port": "✗",
         "source": {
-          "name": "$ ./agency/main -model gpt-3.5-turbo -maxTokens 1000 -temp=1 -prompt \"\" \"Why is concurrency so difficult?\"",
+          "name": "$ ./llm.bash",
           "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "Five Times",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "$ ./llmwhy.bash",
+          "id": 13
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "$ ./llmwhy.bash",
+          "id": 13
         }
       }
     ]

@@ -3,4 +3,5 @@ cd agency
 make
 cd ..
 node ../zd/das2json.mjs <dpink.drawio >dpink.json
-python3 main.py . - 'What is 1.6kg in lb?' main dpink.json | jq -M .
+#python3 main.py . - 'Why is concurrency so difficult?' main dpink.json | jq -M .
+python3 main.py . - 'Why is concurrency so difficult?' main dpink.json

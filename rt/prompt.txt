@@ -1,0 +1,10 @@
+Create a javascript program called `decodeoutput.js` that receives a string of characters on stdin.
+The string of character is a single JSON array containing JSON objects that are key/value pairs of strings.
+Decodedoutput.js creates 4 files
+1. out.lisp
+2. out.py
+3. out.js
+4. out.txt.
+The files are initially empty. The value of each JSON object is appended to the corresponding output file, determined by the key of each incoming JSON object.
+When finished, the files are closed and stored in the file system.
+

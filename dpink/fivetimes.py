@@ -19,6 +19,6 @@ def FiveTimes_instantiate (reg,owner,name,template_data):
 def FiveTimes_handler (eh,mev):
     inst =  eh.instance_data
     if inst.counter < 5:
-        zd.send_string (eh, "", "Why?", mev)
+        zd.send_string (eh, "", mev.datum.v, mev)
         inst.counter += 1
 
