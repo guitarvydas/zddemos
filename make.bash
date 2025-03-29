@@ -14,3 +14,7 @@ cd ..
 cd rt
 ./make.bash
 cd ..
+
+cd html-larson
+./make.bash
+cd ..

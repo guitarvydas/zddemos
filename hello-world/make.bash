@@ -6,4 +6,4 @@ python3 main.py . - '' seq2 hello-world.json | jq -M --compact-output .
 python3 main.py . - '' seq3 hello-world.json | jq -M --compact-output .
 python3 main.py . - '' seq3a hello-world.json | jq -M --compact-output .
 python3 main.py . - '' seq4 hello-world.json | jq -M --compact-output .
-python3 main.py . - '' seq4a hello-world.json | jq -M --compact-output .
+python3 main.py . - '' seq5 hello-world.json | jq -M --compact-output .
