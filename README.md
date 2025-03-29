@@ -6,13 +6,13 @@
 - a simple expression grammar compiled to Python, Javascript, Common Lisp, WASM (WAT?) all at once
 
 ### dpink 
-- an LLM experiment based on Daniel Pink's advice to ask the question "Why?" 5 times
+- an LLM experiment based on Daniel Pink's advice to repeatedly ask the question "Why?" 5 times
 
 ### 0d kernel 
-- written in rt and compiled to Python, Javascript, Common Lisp
+- written in `rt` and compiled to Python, Javascript, Common Lisp
 
 ### Larson scanner running in a browser
-- used generated code for the components
+- uses generated code for the components
 
 # Usage:
 ./make.bash
