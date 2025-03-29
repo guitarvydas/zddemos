@@ -14,6 +14,8 @@
 ### Larson scanner running in a browser
 - uses generated code for the components
 
+## notes
+The `kernel` and `scanner` examples contain the most code, but, the `dpink` LLM example stands out as shining example of how easily ideas can be realized, when thinking this way.
 # Usage:
 ./make.bash
 
