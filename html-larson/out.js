@@ -9,11 +9,7 @@ const lnet =
   '      },' +
   '      {' +
   '        "name": "Divider",' +
-  '        "id": 6' +
-  '      },' +
-  '      {' +
-  '        "name": "trash",' +
-  '        "id": 9' +
+  '        "id": 5' +
   '      }' +
   '    ],' +
   '    "connections": [' +
@@ -23,7 +19,7 @@ const lnet =
   '        "target_port": "",' +
   '        "target": {' +
   '          "name": "Divider",' +
-  '          "id": 6' +
+  '          "id": 5' +
   '        }' +
   '      },' +
   '      {' +
@@ -32,24 +28,11 @@ const lnet =
   '        "target_port": "tick",' +
   '        "source": {' +
   '          "name": "Divider",' +
-  '          "id": 6' +
+  '          "id": 5' +
   '        },' +
   '        "target": {' +
   '          "name": "Larson",' +
   '          "id": 3' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "Larson",' +
-  '          "id": 3' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "trash",' +
-  '          "id": 9' +
   '        }' +
   '      }' +
   '    ]' +
@@ -59,63 +42,63 @@ const lnet =
   '    "children": [' +
   '      {' +
   '        "name": "Count",' +
-  '        "id": 4' +
+  '        "id": 3' +
   '      },' +
   '      {' +
   '        "name": "Reverser",' +
-  '        "id": 8' +
+  '        "id": 7' +
   '      },' +
   '      {' +
   '        "name": "Decode",' +
-  '        "id": 12' +
+  '        "id": 11' +
   '      },' +
   '      {' +
   '        "name": "@",' +
-  '        "id": 25' +
+  '        "id": 23' +
   '      },' +
   '      {' +
   '        "name": "@",' +
-  '        "id": 28' +
+  '        "id": 26' +
   '      },' +
   '      {' +
   '        "name": "@",' +
-  '        "id": 31' +
+  '        "id": 29' +
   '      },' +
   '      {' +
   '        "name": "@",' +
-  '        "id": 34' +
+  '        "id": 32' +
   '      },' +
   '      {' +
   '        "name": "@",' +
-  '        "id": 37' +
+  '        "id": 35' +
   '      },' +
   '      {' +
   '        "name": "@",' +
-  '        "id": 40' +
+  '        "id": 38' +
   '      },' +
   '      {' +
   '        "name": "@",' +
-  '        "id": 43' +
+  '        "id": 41' +
   '      },' +
   '      {' +
   '        "name": "@",' +
-  '        "id": 46' +
+  '        "id": 44' +
   '      },' +
   '      {' +
   '        "name": "@",' +
-  '        "id": 49' +
+  '        "id": 47' +
   '      },' +
   '      {' +
   '        "name": "@",' +
-  '        "id": 52' +
+  '        "id": 50' +
   '      },' +
   '      {' +
   '        "name": "1then2",' +
-  '        "id": 55' +
+  '        "id": 53' +
   '      },' +
   '      {' +
   '        "name": "Disable",' +
-  '        "id": 60' +
+  '        "id": 58' +
   '      }' +
   '    ],' +
   '    "connections": [' +
@@ -125,7 +108,7 @@ const lnet =
   '        "target_port": "adv",' +
   '        "target": {' +
   '          "name": "Count",' +
-  '          "id": 4' +
+  '          "id": 3' +
   '        }' +
   '      },' +
   '      {' +
@@ -134,11 +117,11 @@ const lnet =
   '        "target_port": "rev",' +
   '        "source": {' +
   '          "name": "Reverser",' +
-  '          "id": 8' +
+  '          "id": 7' +
   '        },' +
   '        "target": {' +
   '          "name": "Count",' +
-  '          "id": 4' +
+  '          "id": 3' +
   '        }' +
   '      },' +
   '      {' +
@@ -147,11 +130,11 @@ const lnet =
   '        "target_port": "N",' +
   '        "source": {' +
   '          "name": "1then2",' +
-  '          "id": 55' +
+  '          "id": 53' +
   '        },' +
   '        "target": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        }' +
   '      },' +
   '      {' +
@@ -160,11 +143,11 @@ const lnet =
   '        "target_port": "J",' +
   '        "source": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        },' +
   '        "target": {' +
   '          "name": "Reverser",' +
-  '          "id": 8' +
+  '          "id": 7' +
   '        }' +
   '      },' +
   '      {' +
@@ -173,11 +156,11 @@ const lnet =
   '        "target_port": "K",' +
   '        "source": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        },' +
   '        "target": {' +
   '          "name": "Reverser",' +
-  '          "id": 8' +
+  '          "id": 7' +
   '        }' +
   '      },' +
   '      {' +
@@ -186,11 +169,11 @@ const lnet =
   '        "target_port": "",' +
   '        "source": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 25' +
+  '          "id": 23' +
   '        }' +
   '      },' +
   '      {' +
@@ -199,11 +182,11 @@ const lnet =
   '        "target_port": "",' +
   '        "source": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 28' +
+  '          "id": 26' +
   '        }' +
   '      },' +
   '      {' +
@@ -212,11 +195,11 @@ const lnet =
   '        "target_port": "",' +
   '        "source": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 31' +
+  '          "id": 29' +
   '        }' +
   '      },' +
   '      {' +
@@ -225,11 +208,11 @@ const lnet =
   '        "target_port": "",' +
   '        "source": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 34' +
+  '          "id": 32' +
   '        }' +
   '      },' +
   '      {' +
@@ -238,11 +221,11 @@ const lnet =
   '        "target_port": "",' +
   '        "source": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 37' +
+  '          "id": 35' +
   '        }' +
   '      },' +
   '      {' +
@@ -251,11 +234,11 @@ const lnet =
   '        "target_port": "",' +
   '        "source": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 40' +
+  '          "id": 38' +
   '        }' +
   '      },' +
   '      {' +
@@ -264,11 +247,11 @@ const lnet =
   '        "target_port": "",' +
   '        "source": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 46' +
+  '          "id": 44' +
   '        }' +
   '      },' +
   '      {' +
@@ -277,11 +260,11 @@ const lnet =
   '        "target_port": "",' +
   '        "source": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 49' +
+  '          "id": 47' +
   '        }' +
   '      },' +
   '      {' +
@@ -290,11 +273,11 @@ const lnet =
   '        "target_port": "",' +
   '        "source": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 52' +
+  '          "id": 50' +
   '        }' +
   '      },' +
   '      {' +
@@ -303,11 +286,11 @@ const lnet =
   '        "target_port": "1",' +
   '        "source": {' +
   '          "name": "Count",' +
-  '          "id": 4' +
+  '          "id": 3' +
   '        },' +
   '        "target": {' +
   '          "name": "1then2",' +
-  '          "id": 55' +
+  '          "id": 53' +
   '        }' +
   '      },' +
   '      {' +
@@ -316,11 +299,11 @@ const lnet =
   '        "target_port": "2",' +
   '        "source": {' +
   '          "name": "Count",' +
-  '          "id": 4' +
+  '          "id": 3' +
   '        },' +
   '        "target": {' +
   '          "name": "1then2",' +
-  '          "id": 55' +
+  '          "id": 53' +
   '        }' +
   '      },' +
   '      {' +
@@ -329,11 +312,11 @@ const lnet =
   '        "target_port": "reset",' +
   '        "source": {' +
   '          "name": "Disable",' +
-  '          "id": 60' +
+  '          "id": 58' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 40' +
+  '          "id": 38' +
   '        }' +
   '      },' +
   '      {' +
@@ -342,11 +325,11 @@ const lnet =
   '        "target_port": "reset",' +
   '        "source": {' +
   '          "name": "Disable",' +
-  '          "id": 60' +
+  '          "id": 58' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 46' +
+  '          "id": 44' +
   '        }' +
   '      },' +
   '      {' +
@@ -355,11 +338,11 @@ const lnet =
   '        "target_port": "reset",' +
   '        "source": {' +
   '          "name": "Disable",' +
-  '          "id": 60' +
+  '          "id": 58' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 49' +
+  '          "id": 47' +
   '        }' +
   '      },' +
   '      {' +
@@ -368,11 +351,11 @@ const lnet =
   '        "target_port": "reset",' +
   '        "source": {' +
   '          "name": "Disable",' +
-  '          "id": 60' +
+  '          "id": 58' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 52' +
+  '          "id": 50' +
   '        }' +
   '      },' +
   '      {' +
@@ -381,11 +364,11 @@ const lnet =
   '        "target_port": "reset",' +
   '        "source": {' +
   '          "name": "Disable",' +
-  '          "id": 60' +
+  '          "id": 58' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 37' +
+  '          "id": 35' +
   '        }' +
   '      },' +
   '      {' +
@@ -394,11 +377,11 @@ const lnet =
   '        "target_port": "reset",' +
   '        "source": {' +
   '          "name": "Disable",' +
-  '          "id": 60' +
+  '          "id": 58' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 31' +
+  '          "id": 29' +
   '        }' +
   '      },' +
   '      {' +
@@ -407,11 +390,11 @@ const lnet =
   '        "target_port": "reset",' +
   '        "source": {' +
   '          "name": "Disable",' +
-  '          "id": 60' +
+  '          "id": 58' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 28' +
+  '          "id": 26' +
   '        }' +
   '      },' +
   '      {' +
@@ -420,11 +403,11 @@ const lnet =
   '        "target_port": "reset",' +
   '        "source": {' +
   '          "name": "Disable",' +
-  '          "id": 60' +
+  '          "id": 58' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 25' +
+  '          "id": 23' +
   '        }' +
   '      },' +
   '      {' +
@@ -433,11 +416,11 @@ const lnet =
   '        "target_port": "reset",' +
   '        "source": {' +
   '          "name": "Disable",' +
-  '          "id": 60' +
+  '          "id": 58' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 43' +
+  '          "id": 41' +
   '        }' +
   '      },' +
   '      {' +
@@ -446,11 +429,11 @@ const lnet =
   '        "target_port": "reset",' +
   '        "source": {' +
   '          "name": "Disable",' +
-  '          "id": 60' +
+  '          "id": 58' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 34' +
+  '          "id": 32' +
   '        }' +
   '      },' +
   '      {' +
@@ -459,11 +442,11 @@ const lnet =
   '        "target_port": "",' +
   '        "source": {' +
   '          "name": "Decode",' +
-  '          "id": 12' +
+  '          "id": 11' +
   '        },' +
   '        "target": {' +
   '          "name": "@",' +
-  '          "id": 43' +
+  '          "id": 41' +
   '        }' +
   '      },' +
   '      {' +
@@ -472,438 +455,11 @@ const lnet =
   '        "target_port": "",' +
   '        "source": {' +
   '          "name": "1then2",' +
-  '          "id": 55' +
+  '          "id": 53' +
   '        },' +
   '        "target": {' +
   '          "name": "Disable",' +
-  '          "id": 60' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 2,' +
-  '        "source_port": "done",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 12' +
-  '        }' +
-  '      }' +
-  '    ]' +
-  '  },' +
-  '  {' +
-  '    "name": "LED Sequencer",' +
-  '    "children": [' +
-  '      {' +
-  '        "name": "LEDs Raw",' +
-  '        "id": 4' +
-  '      },' +
-  '      {' +
-  '        "name": "1then2",' +
-  '        "id": 9' +
-  '      },' +
-  '      {' +
-  '        "name": "trash",' +
-  '        "id": 14' +
-  '      }' +
-  '    ],' +
-  '    "connections": [' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "count",' +
-  '        "target_port": "1",' +
-  '        "target": {' +
-  '          "name": "1then2",' +
-  '          "id": 9' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "count",' +
-  '        "target_port": "2",' +
-  '        "target": {' +
-  '          "name": "1then2",' +
-  '          "id": 9' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "count",' +
-  '        "target_port": "1",' +
-  '        "source": {' +
-  '          "name": "1then2",' +
-  '          "id": 9' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "1then2",' +
-  '          "id": 9' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "count",' +
-  '        "target_port": "2",' +
-  '        "source": {' +
-  '          "name": "1then2",' +
-  '          "id": 9' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "1then2",' +
-  '          "id": 9' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "1",' +
-  '        "target_port": "Disable",' +
-  '        "source": {' +
-  '          "name": "1then2",' +
-  '          "id": 9' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "LEDs Raw",' +
-  '          "id": 4' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "2",' +
-  '        "target_port": "N",' +
-  '        "source": {' +
-  '          "name": "1then2",' +
-  '          "id": 9' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "LEDs Raw",' +
-  '          "id": 4' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "Done",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "LEDs Raw",' +
-  '          "id": 4' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "trash",' +
-  '          "id": 14' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 2,' +
-  '        "source_port": "MinMax",' +
-  '        "target_port": "rev",' +
-  '        "source": {' +
-  '          "name": "LEDs Raw",' +
-  '          "id": 4' +
-  '        }' +
-  '      }' +
-  '    ]' +
-  '  },' +
-  '  {' +
-  '    "name": "LEDs Raw",' +
-  '    "children": [' +
-  '      {' +
-  '        "name": "@",' +
-  '        "id": 6' +
-  '      },' +
-  '      {' +
-  '        "name": "@",' +
-  '        "id": 9' +
-  '      },' +
-  '      {' +
-  '        "name": "@",' +
-  '        "id": 12' +
-  '      },' +
-  '      {' +
-  '        "name": "@",' +
-  '        "id": 15' +
-  '      },' +
-  '      {' +
-  '        "name": "@",' +
-  '        "id": 18' +
-  '      },' +
-  '      {' +
-  '        "name": "@",' +
-  '        "id": 21' +
-  '      },' +
-  '      {' +
-  '        "name": "@",' +
-  '        "id": 24' +
-  '      },' +
-  '      {' +
-  '        "name": "@",' +
-  '        "id": 27' +
-  '      },' +
-  '      {' +
-  '        "name": "@",' +
-  '        "id": 30' +
-  '      },' +
-  '      {' +
-  '        "name": "@",' +
-  '        "id": 33' +
-  '      },' +
-  '      {' +
-  '        "name": "Decode",' +
-  '        "id": 36' +
-  '      }' +
-  '    ],' +
-  '    "connections": [' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "Disable",' +
-  '        "target_port": "reset",' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 21' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "Disable",' +
-  '        "target_port": "reset",' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 27' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "Disable",' +
-  '        "target_port": "reset",' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 30' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "Disable",' +
-  '        "target_port": "reset",' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 33' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "Disable",' +
-  '        "target_port": "reset",' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 18' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "Disable",' +
-  '        "target_port": "reset",' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 12' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "Disable",' +
-  '        "target_port": "reset",' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 9' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "Disable",' +
-  '        "target_port": "reset",' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 6' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "Disable",' +
-  '        "target_port": "reset",' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 24' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "Disable",' +
-  '        "target_port": "reset",' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 15' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 0,' +
-  '        "source_port": "N",' +
-  '        "target_port": "N",' +
-  '        "target": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "0",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 21' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "1",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 24' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "2",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 27' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "3",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 30' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "4",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 33' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "5",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 18' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "6",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 15' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "7",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 12' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "8",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 9' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 1,' +
-  '        "source_port": "9",' +
-  '        "target_port": "",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        },' +
-  '        "target": {' +
-  '          "name": "@",' +
-  '          "id": 6' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 2,' +
-  '        "source_port": "done",' +
-  '        "target_port": "Done",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 2,' +
-  '        "source_port": "9",' +
-  '        "target_port": "MinMac",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
-  '        }' +
-  '      },' +
-  '      {' +
-  '        "dir": 2,' +
-  '        "source_port": "0",' +
-  '        "target_port": "MinMac",' +
-  '        "source": {' +
-  '          "name": "Decode",' +
-  '          "id": 36' +
+  '          "id": 58' +
   '        }' +
   '      }' +
   '    ]' +
@@ -2022,13 +1578,12 @@ function decode_handler (eh,msg) {                     /* line 5 *//* line 6 */
     let  i = Number ( s)                               /* line 8 */;
     if ((( i >=  0) && ( i <=  9))) {                  /* line 9 */
       send_string ( eh, s, s, msg)                     /* line 10 *//* line 11 */
-    }
-    send_bang ( eh, "done", msg)                       /* line 12 *//* line 13 *//* line 14 */
+    }                                                  /* line 12 *//* line 13 */
 }
 
-function decode_instantiator (reg,owner,name,template_data) {/* line 15 */
-    let name_with_id = gensymbol ( "Decode")           /* line 16 */;
-    return make_leaf ( name_with_id, owner, null, decode_handler)/* line 17 */;
+function decode_instantiator (reg,owner,name,template_data) {/* line 14 */
+    let name_with_id = gensymbol ( "Decode")           /* line 15 */;
+    return make_leaf ( name_with_id, owner, null, decode_handler)/* line 16 */;
 }
 
 function reverser_install (reg) {                      /* line 1 */

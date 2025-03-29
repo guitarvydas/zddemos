@@ -16,6 +16,8 @@
 
 ## notes
 The `kernel` and `scanner` examples contain the most code, but, the `dpink` LLM example stands out as shining example of how easily ideas can be realized, when thinking this way.
+
+The `hello-world` and `arith` examples are good warm-ups, but, are geared towards simple examples of the techniques instead of being something practical.
 # Usage:
 ./make.bash
 
@@ -24,7 +26,7 @@ The `kernel` and `scanner` examples contain the most code, but, the `dpink` LLM 
 The source code for these examples uses a syntax that is more modern than ASCII. To edit and view the actual source code, use [draw.io](https://app.diagrams.net). Caveat: draw.io is meant for editing diagrams and not source code, but, it's one of the best editors I've found for this kind of thing. I would hope that, in the future, someone will create a code editor that uses graphML/XML/SVG/??? instead of just using 1960s style grids of non-overlapping pixmaps (called "characters"), but, that doesn't exist yet, to the best of my knowledge.
 ## Hello World
 
-![](hello-world/hello-world-nondeterministic.drawio.png)
+![](hello-world/hello-world-nondeterministic.drawio.svg)
 
 ## Arith
 ![](arith/arith-main.drawio.png)
@@ -34,7 +36,6 @@ The source code for these examples uses a syntax that is more modern than ASCII.
 ## LLM (Daniel Pink LLM)
 
 ![](dpink/dpink.drawio.png)
-
 
 ## RT (0D Kernel Source)
 ![](rt/rt-main.drawio.png)
@@ -50,11 +51,11 @@ The source code for these examples uses a syntax that is more modern than ASCII.
 
 ### Larson Scanner
 #### top level (main)
+
 ![](html-larson/scanner-main.drawio.png)
-
 #### main body (Larson)
-![](html-larson/scanner-Larson.drawio.png)
 
+![](html-larson/scanner-Larson.drawio.png)
 
 
 ## Source File Paths
@@ -67,7 +68,7 @@ The source code for the examples is in .drawio files, i.e.
 - `rt/rt.drawio`
 - The Larson scanner code is in `html-larson/scanner.drawio` and the code-generator is in `html-larson/code-generator.drawio`
 
-Given the diagrams, it should be possible to create a kernel yourself. If you need to refer to textual code, look at `rt/0d.rt` and `rt/stock.rt` and `rt/shellout.rt`. This would be akin to someone asking to see the assembler code emitted by a C compiler in the 1970s, or looking at the source code for an operating system. Additionally, you can look at the kernel used for these demos `zd/kernel0d.py`. Caveat: the kernel used for these demos contains a fair amount of historical cruft that hasn't been culled. The kernel is, itself, generated from `.rt` code (as witnessed by the line-number comments on just about every line which refer back to the original line numbers in the `.rt` code). Zac Nowicki at Kagi.com has created several kernels from scratch in various programming languages (Go, Crystal, Odin). Zac (and I) can be contacted at the `programming simplicity` discord `https://discord.gg/65YZUh6Jpq` or by sending email to me at `ptcomputingsimplicity@gmail.com`. I found it easier to use a REPL when building the kernel - see `Miscellaneous` below.
+Given the diagrams, it should be possible to create a kernel yourself. If you need to refer to textual code, look at `rt/0d.rt` and `rt/stock.rt` and `rt/shellout.rt`. This would be akin to someone asking to see the assembler code emitted by a C compiler in the 1970s, or looking at the source code for an operating system. Additionally, you can look at the kernel used for these demos `zd/kernel0d.py`. Caveat: the kernel used for these demos contains a fair amount of historical cruft that hasn't been culled (I'm having more fun writing new code in DPL format (Diagrammatic Programming Language) rather than revisiting "assembler" code (written in `rt`)). The kernel is, itself, generated from `.rt` code (as witnessed by the line-number comments on just about every line which refer back to the original line numbers in the `.rt` code). Zac Nowicki at Kagi.com has created several kernels from scratch in various programming languages (Go, Crystal, Odin). Zac (and I) can be contacted at the `programming simplicity` discord `https://discord.gg/65YZUh6Jpq` or by sending email to me at `ptcomputingsimplicity@gmail.com`. I found it easier to use a REPL when building the kernel - see `Miscellaneous` below.
 
 # Details:
 When you run `./make.bash` from the top level directory of this project, you should see output from the 5 examples.
@@ -77,9 +78,9 @@ Output is directly sent to the console. You should see 7 JSON arrays containing 
 2. The second output is deterministic ensuring that "World" is sent out before "Hello". The code is in tab `seq1` of `hello-world/hello-world.drawio`.
 3. The third output is deterministic ensuring that "Hello" is sent out before "World". The code is in tab `seq2` of `hello-world/hello-world.drawio`.
 4. The fourth output sends 3 messages {"" : "Hello"}, {"" : "Cruel"}, {"" : "World"} and demonstrates one possible way to get deterministic behaviour using a de-racer component called `1then2` (essentially a 2-input sequencer).  Two copies of `1then2` are used to express *very explicit* ordering. The code is in tab `seq3` of `hello-world/hello-world.drawio`. The de-racer `1then2` is implemented in the host language and is fairly trivial. The code uses a state-based approach to check which input is being fired, in what order. The code uses a simple buffer to hold incoming messages and re-output them in the correct order. This part is especially easy to write using a garbage-collected language, but, could be implemented in a non-GC language.
-5. The code in tab `seq3a` shows the same diagram redrawn to look neater (to my eyes).
-6. The code in tab `seq4` shows another way to achieve determinism by placing the `1then2` Parts to the right of the `Hello`, `Cruel` and `World` Parts.
-7. The code in tab `seq5` shows another way to achieve determinism without using any `1then2` Parts. The actual string messages are used as triggers for downstream components. Each component fans-out its output to the output and to the next stage in the pipeline. The  downstream stages ignore the actual data and are triggered only by the arrival of the mevent from upstream. In the kernel code, we call this a *Bang* (in electronics, this is called *edge-triggered*).
+5. The code in tab `seq3a` shows the same diagram redrawn to look neater, to my eyes. Notably, I tried to remove line crossings by judiciously renaming ports and repositioning them on the diagram (look at the positions of the 1 and 2 ports on the `1then2` Parts - the compiler doesn't care that the ports have been moved).
+6. The code in tab `seq4` shows another way to achieve determinism by placing the `1then2` Parts to the right of the `Hello`, `Cruel` and `World` Parts. Note that the input from the white input gate is sent to each of the 3 string Parts. This is called "fan-out" and requires copying of mevents. This is especially easy when the host language contains implicit garbage collection. Production Engineers might want to tighten this code up (or might not want to do so) by performing some kind of explicit garbage collection or ownership tracking. This is an example of MVI - Minimum Viable Implementation. The Software Architect does the minimum amount of work to implement ideas. Later, the final design is punted to Production Engineers who assess the need (if any) for further optimization. MVI differs from MVP, in that MVI skimps on "efficiency" while MVP skimps on "product features". The historical technique of "RAD" - Rapid Application Development - was similar to MVI.
+7. The code in tab `seq5` shows another way to achieve determinism without using any `1then2` Parts. The actual string messages are used only as triggers for downstream components. Each component fans-out its output to, both, the output and to the next stage in the pipeline. The  downstream stages ignore the actual data and are triggered only by the arrival of the mevent from upstream. In the kernel code, we call this a *Bang* (in electronics, this is called *edge-triggered*).
 
 Each of the versions demonstrate issues of human-readability and efficiency. The Software Architect, Software Engineer, and Software Production Engineer must choose the most appropriate method based on latencies and other factors. In contrast, a single, one-size-fits-all, general purpose solution cannot result in efficient code for all use-cases. The best approach is to document various approaches, while leaving the final implementation decision up to the Software Architect (and the rest of team).
 ### Usage
@@ -90,7 +91,7 @@ This is a simple example of "compiling" VHLL code to multiple HLL languages at t
 
 This code generated by this example does "nothing".
 
-If you want to see a full-blown implementation of this technique, see the "0D Kernel Written In VHLL RT" below. Recommendation: don't bother looking at the 0D Kernel code implementation until you understand what this simple `arith` example does.
+If you want to see a full-blown practical use of this technique, see the "0D Kernel Written In VHLL RT" below. Recommendation: don't bother looking at the 0D Kernel code implementation until you understand what this simple `arith` example does.
 
 The `arith` grammar is borrowed from the stock example that comes with [OhmJS](ohmjs.org).
 
@@ -98,9 +99,9 @@ The `arith` grammar is borrowed from the stock example that comes with [OhmJS](o
 ./make.bash
 
 ## Daniel Pink LLM
-Daniel Pink recommends, in [Masterclass](https://www.youtube.com/watch?v=My7hjBp4wH0), that, to determine the _real_ problem, one should dig into issues by asking "Why ... ?" at least 5 times.
+Daniel Pink recommends, in [Masterclass](https://www.youtube.com/watch?v=My7hjBp4wH0), that, to determine the _real_ problem, one should dig into issues by repeatedly asking "Why ... ?" at least 5 times.
 
-I slapped together a feedback loop using two instances of an LLM component and a bit of Python code that counts to 5, to prompt an LLM then re-prompt the main LLM 5 more times after extracting the main issue described in response to the previous response. Aside: this is an example of how 0D encourages freedom of thought - it was easy to imagine using the same LLM Part twice, when the concept of an LLM was abstracted into a single Part. It was easy to create the source code for this using simple edit operations like COPY/PASTE. The LLM Parts lean on little Bash scripts to invoke the *agency* LLM CLI. I could have done this in different ways, but, thought that this looked simple enough for the purposes of this example.
+I slapped together a feedback loop using two instances of an LLM component and a bit of Python code that counts to 5, to prompt an LLM, then re-prompt the main LLM 5 more times after extracting the main issue described in response to the previous response. Aside: this is an example of how 0D encourages freedom of thought - it was easy to imagine using the same LLM Part twice, when the concept of an LLM was abstracted down into a single Part. It was easy to create the source code for this using simple edit operations like COPY/PASTE. The LLM Parts lean on little Bash scripts to invoke the *agency* LLM CLI. I could have done this in different ways, but, thought that this looked simple enough for the purposes of this example.
 
 Unlike recursion, which uses stacks, feedback uses queues. The difference can be described by analogy. Imagine a line of people waiting to buy tickets for a movie at the ticket window. Recursion means that someone gets to cut to the front of the line without waiting their turn, while queueing means that people have to go to the end of the line and wait their turn.
 

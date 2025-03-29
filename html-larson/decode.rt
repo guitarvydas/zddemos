@@ -9,7 +9,6 @@ defn decode_handler (eh, msg) {
     if i >= 0 and i <= 9 {
         send_string (eh, s, s, msg)
     }
-    send_bang (eh, “done”, msg)
 }
 
 defn decode_instantiator (reg, owner, name, template_data) {

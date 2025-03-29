@@ -13,10 +13,6 @@
       {
         "name": "$ ./llmwhy.bash",
         "id": 13
-      },
-      {
-        "name": "?A",
-        "id": 17
       }
     ],
     "connections": [
@@ -66,19 +62,6 @@
         "target": {
           "name": "$ ./llm.bash",
           "id": 5
-        }
-      },
-      {
-        "dir": 1,
-        "source_port": "",
-        "target_port": "",
-        "source": {
-          "name": "Five Times",
-          "id": 9
-        },
-        "target": {
-          "name": "?A",
-          "id": 17
         }
       },
       {

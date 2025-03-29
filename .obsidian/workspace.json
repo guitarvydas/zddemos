@@ -168,17 +168,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1e4845888c53628",
+  "active": "4e8818743d56d0e6",
   "lastOpenFiles": [
-    "html-larson/scanner-Larson.drawio.png",
-    "html-larson/scanner-main.drawio.png",
-    "html-larson/code-generator-main.drawio.png",
-    "rt/rt-main.drawio.png",
-    "dpink/scanner-main.drawio.png",
-    "dpink/code-generator-main.drawio.png",
-    "dpink/rt-main.drawio.png",
-    "dpink/dpink.drawio.png",
-    "hello-world/hello-world-nondeterministic.drawio.png",
-    "arith/arith-main.drawio.png"
+    "html-larson/scanner-Larson.drawio.svg",
+    "html-larson/scanner-main.drawio.svg",
+    "html-larson/code-generator-main.drawio.svg",
+    "rt/rt-main.drawio.svg",
+    "dpink/dpink.drawio.svg",
+    "arith/arith-main.drawio.svg",
+    "hello-world/hello-world-seq5.drawio.svg",
+    "hello-world/hello-world-seq4.drawio.svg",
+    "hello-world/hello-world-seq3a.drawio.svg",
+    "hello-world/hello-world-seq3.drawio.svg",
+    "hello-world/hello-world-seq2.drawio.svg",
+    "dpink/out.md",
+    "README.md"
   ]
 }
