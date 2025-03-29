@@ -168,8 +168,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e8818743d56d0e6",
+  "active": "d1e4845888c53628",
   "lastOpenFiles": [
+    "html-larson/scanner-Larson.drawio.png",
+    "README.md",
     "html-larson/scanner-Larson.drawio.svg",
     "html-larson/scanner-main.drawio.svg",
     "html-larson/code-generator-main.drawio.svg",
@@ -180,8 +182,6 @@
     "hello-world/hello-world-seq4.drawio.svg",
     "hello-world/hello-world-seq3a.drawio.svg",
     "hello-world/hello-world-seq3.drawio.svg",
-    "hello-world/hello-world-seq2.drawio.svg",
-    "dpink/out.md",
-    "README.md"
+    "dpink/out.md"
   ]
 }

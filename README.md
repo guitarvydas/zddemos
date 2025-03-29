@@ -29,33 +29,32 @@ The source code for these examples uses a syntax that is more modern than ASCII.
 ![](hello-world/hello-world-nondeterministic.drawio.svg)
 
 ## Arith
-![](arith/arith-main.drawio.png)
 
-
+![](arith/arith-main.drawio.svg)
 
 ## LLM (Daniel Pink LLM)
 
-![](dpink/dpink.drawio.png)
+![](dpink/dpink.drawio.svg)
 
 ## RT (0D Kernel Source)
-![](rt/rt-main.drawio.png)
 
+![](rt/rt-main.drawio.svg)
 
 
 ## Larson Scanner (in a browser)
 
 ### Code Generator
-![](html-larson/code-generator-main.drawio.png)
 
 
+![](html-larson/code-generator-main.drawio.svg)
 
 ### Larson Scanner
 #### top level (main)
+![](html-larson/scanner-main.drawio.svg)
 
-![](html-larson/scanner-main.drawio.png)
 #### main body (Larson)
 
-![](html-larson/scanner-Larson.drawio.png)
+![](html-larson/scanner-Larson.drawio.svg)
 
 
 ## Source File Paths
