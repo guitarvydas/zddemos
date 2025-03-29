@@ -20,6 +20,7 @@
 # Source Code
 ## Hello World
 
+![](hello-world-nondeterministic.drawio.png)
 ## ![[hello-world-nondeterministic.drawio.png|500]]
 
 ## Arith
