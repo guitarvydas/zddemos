@@ -6,3 +6,11 @@ cd ..
 cd arith
 ./make.bash
 cd ..
+
+cd dpink
+./make.bash
+cd ..
+
+cd rt
+./make.bash
+cd ..

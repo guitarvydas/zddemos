@@ -1,0 +1,7 @@
+[
+  {"lisp": "(print \"hello\")"},
+  {"py": "print(\"hello\")"},
+  {"js": "console.log(\"hello\")"},
+  {"cpp": "#include <iostream>\nint main() {\n  std::cout << \"hello\";\n  return 0;\n}"},
+  {"rust": "fn main() {\n  println!(\"hello\");\n}"}
+]
