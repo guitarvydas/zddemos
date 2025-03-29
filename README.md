@@ -21,29 +21,34 @@
 ## Hello World
 
 ![](hello-world/hello-world-nondeterministic.drawio.png)
-## ![[hello-world-nondeterministic.drawio.png|500]]
+## 
 
 ## Arith
+![](arith/arith-main.drawio.png)
 
-![[arith-main.drawio.png|500]]
+
 
 ## LLM (Daniel Pink LLM)
 
-![[dpink.drawio.png|500]]
+![](dpink/dpink.drawio.png)
+
 
 ## RT (0D Kernel Source)
+![](rt/rt-main.drawio.png)
 
-![[rt-main.drawio.png|500]]
+
 
 ## Larson Scanner (in a browser)
 
 ### Code Generator
+![](html-larson/code-generator-main.drawio.png)
 
-![[code-generator-main.drawio.png|500]]
+
 
 ### Larson Scanner
+![](html-larson/scanner-main.drawio.png)
 
-![[scanner-main.drawio.png|500]]
+
 
 
 ## Source File Paths
