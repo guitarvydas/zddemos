@@ -908,10 +908,7 @@ const lnet =
   '      }' +
   '    ]' +
   '  }' +
-  ']';import * as fs from 'fs';
-import path from 'path';
-import execSync from 'child_process';
-                                                       /* line 1 *//* line 2 */
+  ']';/* line 1 *//* line 2 */
 let  counter =  0;                                     /* line 3 */
 let  ticktime =  0;                                    /* line 4 */
 let  main_container =  null;                           /* line 5 *//* line 6 */
@@ -1310,7 +1307,7 @@ function route (container,from_component,mevent) {     /* line 380 */
       }                                                /* line 401 */
     }
     if ((! ( was_sent))) {                             /* line 402 */
-      live_update ( "✗",  ( container.name.toString ()+  ( ": mevent '".toString ()+  ( mevent.port.toString ()+  ( "' from ".toString ()+  ( fromname.toString ()+  " dropped on floor...".toString ()) .toString ()) .toString ()) .toString ()) .toString ()) )/* line 403 *//* line 404 */
+      console.log ( "✗" + ": " +   ( container.name.toString ()+  ( ": mevent '".toString ()+  ( mevent.port.toString ()+  ( "' from ".toString ()+  ( fromname.toString ()+  " dropped on floor...".toString ()) .toString ()) .toString ()) .toString ()) .toString ()) )/* line 403 *//* line 404 */
     }                                                  /* line 405 *//* line 406 */
 }
 
@@ -1653,7 +1650,7 @@ function probeC_instantiate (reg,owner,name,template_data) {/* line 11 */
 
 function probe_handler (eh,mev) {                      /* line 16 *//* line 17 */
     let s =  mev.datum.v;                              /* line 18 */
-    live_update ( "Info",  ( "  @".toString ()+  (`${ ticktime}`.toString ()+  ( "  ".toString ()+  ( "probe ".toString ()+  ( eh.name.toString ()+  ( ": ".toString ()+   s.toString ()) .toString ()) .toString ()) .toString ()) .toString ()) .toString ()) )/* line 26 *//* line 27 *//* line 28 */
+    console.log ( "Info" + ": " +   ( "  @".toString ()+  (`${ ticktime}`.toString ()+  ( "  ".toString ()+  ( "probe ".toString ()+  ( eh.name.toString ()+  ( ": ".toString ()+   s.toString ()) .toString ()) .toString ()) .toString ()) .toString ()) .toString ()) )/* line 26 *//* line 27 *//* line 28 */
 }
 
 function trash_instantiate (reg,owner,name,template_data) {/* line 29 */
@@ -2115,8 +2112,8 @@ function disable_instantiator (reg,owner,name,template_data) {/* line 14 */
 }
 
 function main () {                                     /* line 1 */
-    live_update ( "",  "reset")                        /* line 2 */
-    live_update ( "Info",  "SCANNER begin")            /* line 3 */
+    console.log ( "" + ": " +   "reset")               /* line 2 */
+    console.log ( "Info" + ": " +   "SCANNER begin")   /* line 3 */
     let  palette =  null;                              /* line 4 */
     let  env =  null;                                  /* line 5 */
     [ palette, env] = initialize_from_string ( ".")    /* line 6 */;/* line 7 */
@@ -2128,7 +2125,7 @@ function main () {                                     /* line 1 */
     divider_install ( palette)                         /* line 13 */
     disable_install ( palette)                         /* line 14 *//* line 15 */
     start ( "", "main", palette, env)                  /* line 16 */
-    live_update ( "Info",  "SCANNER end")              /* line 17 *//* line 18 */
+    console.log ( "Info" + ": " +   "SCANNER end")     /* line 17 *//* line 18 */
 }
 
 /*  intentionally left empty  */

@@ -1214,7 +1214,7 @@
     "name": "RT to Javascript",
     "children": [
       {
-        "name": "$ ../util/t2t ../rt/emit.ohm ../rt/emitjs.rewrite ../rt/support.js -",
+        "name": "$ ../util/t2t ../rt/emit.ohm ./emithtmljs.rewrite ../rt/support.js -",
         "id": 5
       }
     ],
@@ -1224,7 +1224,7 @@
         "source_port": "",
         "target_port": "",
         "target": {
-          "name": "$ ../util/t2t ../rt/emit.ohm ../rt/emitjs.rewrite ../rt/support.js -",
+          "name": "$ ../util/t2t ../rt/emit.ohm ./emithtmljs.rewrite ../rt/support.js -",
           "id": 5
         }
       },
@@ -1233,7 +1233,7 @@
         "source_port": "",
         "target_port": "",
         "source": {
-          "name": "$ ../util/t2t ../rt/emit.ohm ../rt/emitjs.rewrite ../rt/support.js -",
+          "name": "$ ../util/t2t ../rt/emit.ohm ./emithtmljs.rewrite ../rt/support.js -",
           "id": 5
         }
       },
@@ -1242,7 +1242,7 @@
         "source_port": "✗",
         "target_port": "✗",
         "source": {
-          "name": "$ ../util/t2t ../rt/emit.ohm ../rt/emitjs.rewrite ../rt/support.js -",
+          "name": "$ ../util/t2t ../rt/emit.ohm ./emithtmljs.rewrite ../rt/support.js -",
           "id": 5
         }
       }
